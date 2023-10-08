@@ -1,0 +1,370 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TÜSPE - Türkiye Sağlık Politikaları Enstitüsü</title>
+    <meta name="description" content=" Türkiye Sağlık Politikaları Enstitüsü - TÜSPE / ANKARA'" />
+    <meta name="keywords" content="TÜSPE, Türkiye Sağlık Enstitüleri Başkanlığı, Sağlık Politikaları, Sağlık Politika, Politika, Turkish Health, Turkish Institute for Health Policies, TUSPE, Politics, Fatih KARAKAŞ, Ankara," />
+    <link rel="shortcut icon" type="image/png" href="/favicon2.png" />
+    <meta name="author" content="Fatih KARAKAŞ">
+    <meta name="expires" content="no" />
+    <meta name="Googlebot" content="index,follow" />
+    <meta name="Robots" content="index,follow" />
+    <meta name="distribution" content="Global" />
+    <meta name="audience" content="all" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="content-Language" content="tr" />
+    <script src="/js/lightbox/js/jquery-1.7.2.min.js"></script>
+    <script src="/js/lightbox/js/lightbox.js"></script>
+    <link href="/js/lightbox/css/lightbox.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/js/pretty_photo/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+    <script src="/js/pretty_photo/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+    <link href="/tuspe.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/js/basic-jquery-slider-master/bjqs.css">
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="/js/basic-jquery-slider-master/js/bjqs-1.3.min.js"></script>
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <script src="js/bootstrap.js" ></script> 
+    <script src="js/bootstrap.bundle.js" ></script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TK4PFSV');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127581206-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-127581206-1');
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK4PFSV"
+                height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <div class="container-fluid">
+            <div id="body_div" align="center">
+                <div align="center" id="header_ust_div">
+                    <div class="div_980">
+
+                        <a href="/Anasayfa" id="header_logo" title="TÜSPE"></a>
+
+                        <div id="header_sag_ust_div">
+
+
+                            <div id="header_dil_secenegi">
+                                 
+                                <a class="selected" href="/Home" title="English" id="header_english"></a>
+                                <a class="selected" href="/Anasayfa" title="Türkçe" id="header_turkish"></a>
+                                <a href="https://www.youtube.com/channel/UCvmPfZTLA26UmrisZqgKQbQ" id="header_youtube" title="Youtube" target="_blank"></a>
+                                <a href="https://twitter.com/TusebTuspe" id="header_twitter" title="Twitter" target="_blank"></a>
+                                <a href="https://www.facebook.com/TusebTuspe" id="header_facebook" title="Facebook" target="_blank"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="header_menu_div" align="center">
+
+                    <div id="header_menu" align="left">
+
+                        <a href="/Anasayfa" id="anasayfa" title="TÜSPE Anasayfa"></a>
+                        <asp:SqlDataSource ID="MenuGetirici" runat="server" ConnectionString="<%$ ConnectionStrings:DB1 %>" SelectCommand="MenuGetir" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+                        <asp:SqlDataSource ID="AltMenuGetirci" runat="server" ConnectionString="<%$ ConnectionStrings:DB1 %>"></asp:SqlDataSource>
+                        <asp:Repeater runat="server" ID="MenuUst" DataSourceID="MenuGetirici" OnItemDataBound="MenuUst_ItemDataBound">
+                            <ItemTemplate>
+                                <div class="menu_bolumu">
+                                    <div class="menu_baslik"><a href='/Kategori/<%#Eval("kategori_seo_name") %>'><%#Eval("kategori_adi") %></a></div>
+
+                                    <asp:Repeater runat="server" ID="altmenurepeater">
+                                        <HeaderTemplate>
+                                            <div class="cssmenu">
+                                                <li class='liste_header'></li>
+                                                <ul>
+                                        </HeaderTemplate>
+                                        <ItemTemplate>
+
+
+                                            <li>
+                                                <a href='/sayfa/<%#Eval("seo_link_name") %>'><%#Eval("link_adi") %></a>
+                                            </li>
+
+
+                                        </ItemTemplate>
+                                        <FooterTemplate>
+                                            <li class='liste_footer'></li>
+                                            </ul> 
+                            </div>
+                                        </FooterTemplate>
+                                    </asp:Repeater>
+
+                                </div>
+
+
+                            </ItemTemplate>
+                        </asp:Repeater>
+
+
+
+
+
+
+
+                        <a href="/iletisim" class="tek_link">İletişim</a>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+
+            <!-- Footer Başlar-->
+            <div id="footer_div" align="center">
+                <div id="footer_dalga"></div>
+                <div align="left" id="footer_alt_div">
+                    <div class="footer_menu_sutun">
+
+                        <a href="http://www.tuseb.gov.tr" id="footer_logo" title="TÜSEB"></a>
+                        <asp:SqlDataSource runat="server" ID="Footer1" ConnectionString="<%$ ConnectionStrings:DB1 %>" SelectCommand="FooterAyar" SelectCommandType="StoredProcedure">
+                            <SelectParameters>
+                                <asp:Parameter DefaultValue="1" Name="kategorid" Type="Int32" />
+                            </SelectParameters>
+                        </asp:SqlDataSource>
+                        <div class="footer_menu_baslik">TÜSPE</div>
+                        <a href="/Anasayfa">Anasayfa</a>
+                        <asp:Repeater runat="server" ID="ft1" DataSourceID="Footer1">
+                            <ItemTemplate>
+                                <a href='/sayfa/<%# Eval("seo_link_name") %>'><%# Eval("link_adi") %></a>
+                            </ItemTemplate>
+                            <FooterTemplate>
+                                <a href="/Haberler">Haberler</a>
+                                <%--<a href="galeri.php">Photo ve Video Gallery</a>--%>
+                                <a href="/iletisim">İletisim</a>
+                            </FooterTemplate>
+                        </asp:Repeater>
+
+                    </div>
+
+
+                    <div class="footer_menu_sutun">
+                        <div class="footer_menu_baslik">Birimler</div>
+                        <asp:SqlDataSource runat="server" ID="Footer2" ConnectionString="<%$ ConnectionStrings:DB1 %>" SelectCommand="FooterAyar" SelectCommandType="StoredProcedure">
+                            <SelectParameters>
+                                <asp:Parameter DefaultValue="3" Name="kategorid" Type="Int32" />
+                            </SelectParameters>
+                        </asp:SqlDataSource>
+
+                        <asp:Repeater runat="server" ID="Ft2" DataSourceID="Footer2">
+                            <ItemTemplate>
+                                <a href='/sayfa/<%# Eval("seo_link_name") %>'><%# Eval("link_adi") %></a>
+                            </ItemTemplate>
+                        </asp:Repeater>
+
+                        <div class="footer_menu_baslik2">Kurullar</div>
+                        <asp:SqlDataSource runat="server" ID="Footer3" ConnectionString="<%$ ConnectionStrings:DB1 %>" SelectCommand="FooterAyar" SelectCommandType="StoredProcedure">
+                            <SelectParameters>
+                                <asp:Parameter DefaultValue="4" Name="kategorid" Type="Int32" />
+                            </SelectParameters>
+                        </asp:SqlDataSource>
+
+                        <asp:Repeater runat="server" ID="Ft3" DataSourceID="Footer3">
+                            <ItemTemplate>
+                                <a href='/sayfa/<%# Eval("seo_link_name") %>'><%# Eval("link_adi") %></a>
+                            </ItemTemplate>
+                        </asp:Repeater>
+
+
+                    </div>
+
+                    <div class="footer_menu_sutun">
+                        <div class="footer_menu_baslik">Proje ve Destekler</div>
+                        <asp:SqlDataSource runat="server" ID="Footer4" ConnectionString="<%$ ConnectionStrings:DB1 %>" SelectCommand="FooterAyar" SelectCommandType="StoredProcedure">
+                            <SelectParameters>
+                                <asp:Parameter DefaultValue="5" Name="kategorid" Type="Int32" />
+                            </SelectParameters>
+                        </asp:SqlDataSource>
+
+                        <asp:Repeater runat="server" ID="Ft4" DataSourceID="Footer4">
+                            <ItemTemplate>
+                                <a href='/sayfa/<%# Eval("seo_link_name") %>'><%# Eval("link_adi") %></a>
+                            </ItemTemplate>
+                        </asp:Repeater>
+
+                        <div class="footer_menu_baslik2">Eğitim ve İşbirlikleri</div>
+                        <asp:SqlDataSource runat="server" ID="Footer5" ConnectionString="<%$ ConnectionStrings:DB1 %>" SelectCommand="FooterAyar" SelectCommandType="StoredProcedure">
+                            <SelectParameters>
+                                <asp:Parameter DefaultValue="7" Name="kategorid" Type="Int32" />
+                            </SelectParameters>
+                        </asp:SqlDataSource>
+
+                        <asp:Repeater runat="server" ID="Repeater2" DataSourceID="Footer5">
+                            <ItemTemplate>
+                                <a href='/sayfa/<%# Eval("seo_link_name") %>'><%# Eval("link_adi") %></a>
+                            </ItemTemplate>
+                        </asp:Repeater>
+
+                    </div>
+
+                    <div class="footer_menu_sutun">
+                        <div class="footer_menu_baslik">Toplantılar</div>
+                        <asp:SqlDataSource runat="server" ID="Footer6" ConnectionString="<%$ ConnectionStrings:DB1 %>" SelectCommand="FooterAyar" SelectCommandType="StoredProcedure">
+                            <SelectParameters>
+                                <asp:Parameter DefaultValue="8" Name="kategorid" Type="Int32" />
+                            </SelectParameters>
+                        </asp:SqlDataSource>
+
+                        <asp:Repeater runat="server" ID="Repeater1" DataSourceID="Footer6">
+                            <ItemTemplate>
+                                <a href='/sayfa/<%# Eval("seo_link_name") %>'><%# Eval("link_adi") %></a>
+                            </ItemTemplate>
+                        </asp:Repeater>
+
+                        <div class="footer_menu_baslik2">Yayınlar</div>
+                        <asp:SqlDataSource runat="server" ID="Footer7" ConnectionString="<%$ ConnectionStrings:DB1 %>" SelectCommand="FooterAyar" SelectCommandType="StoredProcedure">
+                            <SelectParameters>
+                                <asp:Parameter DefaultValue="10" Name="kategorid" Type="Int32" />
+                            </SelectParameters>
+                        </asp:SqlDataSource>
+
+                        <asp:Repeater runat="server" ID="Repeater3" DataSourceID="Footer7">
+                            <ItemTemplate>
+                                <a href='/sayfa/<%# Eval("seo_link_name") %>'><%# Eval("link_adi") %></a>
+                            </ItemTemplate>
+                        </asp:Repeater>
+
+
+
+
+
+                    </div>
+
+
+                </div>
+
+
+                <table width="100%" border="0" cellpadding="5" cellspacing="0" id="footer_copyright">
+                    <tbody>
+                        <tr>
+                            <td width="98%" align="left" scope="row">&nbsp;</td>
+                            <td width="2%" align="center" scope="row">&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+
+
+
+
+                <script>
+                    $(document).ready(function () {
+
+                        // hide #back-top first
+                        $("#back-top").hide();
+
+                        // fade in #back-top
+                        $(function () {
+                            $(window).scroll(function () {
+                                if ($(this).scrollTop() > 100) {
+                                    $('#back-top').fadeIn();
+                                } else {
+                                    $('#back-top').fadeOut();
+                                }
+                            });
+
+                            // scroll body to 0px on click
+                            $('#back-top a').click(function () {
+                                $('body,html').animate({
+                                    scrollTop: 0
+                                }, 800);
+                                return false;
+                            });
+                        });
+
+                    });
+                </script>
+            </div>
+
+        </div>
+        <table width="100%" border="0" cellpadding="5" cellspacing="0" id="footer_copyright">
+            <tr>
+                <td width="98%" align="left" scope="row">&nbsp;</td>
+                <td width="2%" align="center" scope="row">&nbsp;</td>
+            </tr>
+        </table>
+
+        </div>
+        
+        </div>
+    </form>
+    <script>
+        $(document).ready(function () {
+
+            // hide #back-top first
+            $("#back-top").hide();
+
+            // fade in #back-top
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('#back-top').fadeIn();
+                    } else {
+                        $('#back-top').fadeOut();
+                    }
+                });
+
+                // scroll body to 0px on click
+                $('#back-top a').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+            });
+
+        });
+    </script>
+    <script class="secret-source">
+        jQuery(document).ready(function ($) {
+
+            $('#banner-fade').bjqs({
+                height: 330,
+                width: 980,
+                responsive: true
+            });
+
+        });
+    </script>
+</body>
+</html>

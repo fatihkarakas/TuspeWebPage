@@ -1,0 +1,1541 @@
+p {
+    line-height: 16px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    font-size: 12px;
+}
+
+.table_class {
+    width: 100%;
+    border-radius: 3px
+}
+
+    .table_class a {
+    }
+
+    .table_class td {
+        padding: 10px;
+        border-bottom: dotted rgb(238, 238, 238);
+        border-width: thin;
+    }
+
+
+    .table_class tr:nth-child(odd) {
+        background: #fff;
+    }
+
+    .table_class tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+.ekibimiz img {
+    border: 1px solid #eee;
+}
+
+.ekibimiz td {
+    text-align: center
+}
+
+
+h1 {
+    color: #e20016;
+    font-size: 18px;
+    font-weight: normal;
+    clear: both;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 5px
+}
+
+h2 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 300;
+    clear: both;
+    font-family: 'Archivo Narrow', sans-serif;
+    margin: auto;
+    padding: 0px;
+    clear: both;
+    background-image: url(images/h2_icon.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 18px;
+}
+
+h3 {
+    color: #e20016;
+    font-size: 14px;
+    font-weight: normal;
+    clear: both;
+}
+
+hr {
+    border: #eee 1px dotted;
+}
+/*yatay çizgi*/
+
+<!-- SCROLL UP CSS - >
+#back-top {
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+}
+
+#back-top a {
+    width: 40px;
+    display: block;
+    /* transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+
+
+/* arrow icon (span tag) */
+#back-top span {
+    position: fixed;
+    z-index: 1500;
+    bottom: 40px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-bottom: 7px;
+    background: url(images/back_top.png) no-repeat center center;
+    opacity: 0.7;
+    /* transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+
+#back-top a:hover span {
+    opacity: 1;
+}
+
+#back-top a:hover {
+}
+<!-- SCROLL UP CSS -ENDS - >
+
+img.grayscale {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    filter: gray;
+    -ms-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+img.grayscale:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    filter: none;
+}
+
+
+
+#ana_div {
+    min-height: 100%;
+    position: relative;
+}
+
+#body_div {
+    padding-bottom: 10px;
+}
+
+#footer_div {
+    width: 100%;
+    background-image: url(images/slayt_bg3.png);
+    bottom: 0;
+    height: auto; /* Height of the footer */
+    z-index: 3;
+}
+
+#footer_dalga {
+    background-image: none;
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    width: 100%;
+    height: 8px;
+    min-width: 980px;
+    margin-top: -8px;
+}
+
+#footer_alt_div {
+    width: 980px;
+    font-size: 11px;
+    color: #eee;
+}
+
+
+#footer_copyright {
+    min-width: 980px;
+    background-color: #E2E2E2;
+}
+
+    #footer_copyright a {
+        color: #666;
+        font-size: 11px
+    }
+
+.footer_menu_sutun {
+    width: 230px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 15px;
+    float: left;
+    min-height: 140px;
+}
+
+
+    .footer_menu_sutun a {
+        width: 213px;
+        padding-top: 6px;
+        padding-bottom: 5px;
+        color: #ccc;
+        margin-bottom: 1px;
+        display: inline-block;
+        border-bottom: dashed 1px #999999;
+    }
+
+        .footer_menu_sutun a:hover {
+            padding-left: 10px;
+            background-image: url(images/beyaz_kare_ikon.png);
+            background-repeat: no-repeat;
+            background-position: left;
+            color: #FFFFFF;
+        }
+
+.footer_menu_sutun_sag {
+    width: 200px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+}
+
+    .footer_menu_sutun_sag a {
+        width: 142px;
+        padding-top: 4px;
+        padding-bottom: 2px;
+        color: #ccc;
+        margin-bottom: 1px;
+        display: inline-block;
+        border-bottom: dashed 1px #999999;
+    }
+
+
+.footer_menu_baslik {
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.footer_menu_baslik2 {
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+
+#footer_logo {
+    width: 150px;
+    height: 77px;
+    position: relative;
+    background-image: url(images/tuseb-logo8.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 27px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#footer_logo_en {
+    width: 150px;
+    height: 77px;
+    position: relative;
+    background-image: url(images/tuseb-logo8-en.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 27px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#footer_logo:hover, #footer_logo-en:hover {
+    padding-left: 0px;
+    opacity: 0.90;
+}
+
+
+/* BASLAR Logo ve telefonun oldugu bölüm*/
+header {
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+}
+
+    header img:hover {
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+    }
+
+
+
+
+#header_bilgi {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #f9f9f9;
+    color: #fff;
+    height: 17px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+    #header_bilgi .div_980 {
+        text-align: left;
+        font-size: 11px;
+    }
+
+    #header_bilgi .uye_ol {
+        background-image: url(images/uye_ol_icon.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        padding: 5px;
+        color: #000;
+        font-size: 11px;
+        width: 93px;
+        position: absolute;
+        right: 106px;
+        top: 2px;
+        font-weight: 600;
+        cursor: pointer;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+
+    #header_bilgi .giris_yap {
+        background-image: url(images/giris_yap_icon.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        padding: 5px;
+        color: #000;
+        font-size: 11px;
+        width: 95px;
+        position: absolute;
+        right: 10px;
+        top: 2px;
+        font-weight: 600;
+        cursor: pointer;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+
+        #header_bilgi .uye_ol:hover, #header_bilgi .giris_yap:hover {
+            text-decoration: underline;
+        }
+
+
+
+#header_dil_secenegi {
+    position: relative;
+    text-align: center;
+    float: right;
+}
+
+    #header_dil_secenegi a {
+        margin-right: 3px;
+    }
+
+
+        #header_dil_secenegi a:hover {
+            opacity: 0.7;
+            filter: alpha(opacity=70);
+        }
+
+
+
+
+
+
+
+#header_sag_ust_div {
+    float: right;
+    margin-top: 70px;
+}
+
+#header_search_form {
+    float: right;
+}
+
+    #header_search_form input {
+        border: thin solid #dbdbdb;
+        background-color: #e9e9e9;
+        padding: 4px;
+        padding-top: 5px;
+        margin-top: -1px;
+        width: 121px;
+        font-size: 13px;
+    }
+
+        #header_search_form input:focus {
+            background-color: #333;
+            color: #fff;
+        }
+
+
+
+#header_ust_div {
+    background-color: #FFFFFF;
+    height: 105px;
+}
+
+    #header_ust_div img:hover {
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+    }
+
+
+#header_facebook {
+    height: 27px;
+    width: 28px;
+    position: relative;
+    float: right;
+    background-image: url(images/facebook.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 2px !important;
+    border: none !important;
+}
+
+#header_twitter {
+    height: 27px;
+    width: 28px;
+    position: relative;
+    float: right;
+    background-image: url(images/twitter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 2px !important;
+    border: none !important;
+}
+
+
+#header_youtube {
+    height: 27px;
+    width: 28px;
+    position: relative;
+    float: right;
+    background-image: url(images/youtube.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 2px !important;
+    border: none !important;
+}
+
+#header_english {
+    height: 27px;
+    width: 28px;
+    position: relative;
+    float: right;
+    background-image: url(images/en.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 3px;
+    border: none !important;
+}
+
+#header_turkish {
+    height: 27px;
+    width: 28px;
+    position: relative;
+    float: right;
+    background-image: url(images/tr.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 3px;
+    border: none !important;
+}
+
+
+#header_logo {
+    width: 348px;
+    height: 66px;
+    position: relative;
+    float: left;
+    background-image: url(images/tuspe-logo2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 24px;
+}
+
+#header_logo_en {
+    width: 356px;
+    height: 66px;
+    position: relative;
+    float: left;
+    background-image: url(images/tuspe-logo-en2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 24px;
+}
+
+
+
+#header_iletisim {
+    height: 62px;
+    position: relative;
+    float: right;
+    width: 140px;
+    margin-top: 44px;
+    margin-right: -73px;
+    font-size: 11px;
+    color: #1a356c;
+}
+
+
+
+
+
+
+#header_logo:hover, #header_logo_en:hover, #header_logo2:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+
+
+
+/* BITER Logo ve telefonun oldugu bölüm*/
+
+
+/* BASLAR Header bölümü menü*/
+#header_menu_div {
+    background-color: #f4f4f4;
+    height: 36px;
+    width: 100%;
+    z-index: 99;
+    position: relative;
+    display: inline-block
+}
+
+#header_menu {
+    width: 980px;
+}
+
+    #header_menu #anasayfa {
+        background-image: url(images/home.png);
+        background-repeat: no-repeat;
+        width: 17px;
+        height: 15px;
+        padding-left: 0px;
+        padding-right: 10px;
+        padding-top: 13px;
+        padding-bottom: 8px;
+        background-position: center;
+    }
+
+        #header_menu #anasayfa:hover {
+            background-image: url(images/home2.png);
+        }
+
+    #header_menu a {
+        float: left;
+        font-family: 'Archivo Narrow', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        color: #333;
+        padding-left: 14px;
+        padding-right: 15px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    #header_menu .tek_link {
+    }
+
+    #header_menu a:hover {
+        background: #666;
+        color: #FFFFFF;
+    }
+
+    #header_menu #selected_a {
+        background: #666;
+        color: #FFFFFF;
+    }
+
+    #header_menu:hover #selected_a {
+        background: #666;
+    }
+
+#menu_alti_cizgi {
+    width: 100%;
+    height: 1px;
+    background-color: #e20016;
+    z-index: 1;
+    position: relative;
+}
+
+
+.menu_bolumu {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 3px;
+    font-weight: 400;
+    color: #333;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    float: left;
+    cursor: pointer;
+}
+
+    .menu_bolumu:hover {
+        background-color: #666;
+        color: #FFFFFF;
+    }
+
+.menu_baslik {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    height: 27px;
+    padding-top: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    float: none;
+    display: block;
+    background-image: url(images/asagi_ok.png);
+    background-position: right 18px;
+    background-repeat: no-repeat;
+}
+
+#header_menu .menu_baslik a {
+    color: #333;
+    padding-top: 0px;
+}
+
+#header_menu .menu_baslik:hover a {
+    color: #fff;
+}
+
+#header_menu .menu_bolumu:hover .cssmenu {
+    display: block;
+}
+
+#header_menu .menu_bolumu:hover a {
+    color: #FFFFFF;
+}
+
+.cssmenu {
+    border: none;
+    margin: 0px;
+    margin-top: -11px;
+    padding: 0px;
+    padding-bottom: 77px;
+    margin-top: 0px;
+    margin-left: -10px;
+    width: auto;
+    clear: both;
+    display: none;
+    position: absolute;
+    width: 263px;
+    height: auto;
+    z-index: 2;
+}
+
+    .cssmenu a {
+        float: left;
+        width: 225px;
+        padding-left: 10px;
+        padding-right: 10px !important;
+        margin-left: 0px;
+        background-position: left;
+        background-repeat: repeat;
+        border-bottom: 1px dotted #cecece;
+        font-size: 14px !important;
+    }
+
+        .cssmenu a:hover {
+            background-color: inherit;
+            z-index: 99999;
+        }
+
+    .cssmenu .liste_header {
+        margin-left: 0px;
+        z-index: 9999;
+        width: 250px;
+        float: left;
+        padding: 0;
+        height: 2px;
+        cursor: default;
+        position: absolute;
+        background-image: none;
+        background-color: #666666;
+    }
+
+    .cssmenu > ul {
+        margin-top: 0px !important;
+    }
+
+    .cssmenu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .cssmenu ul li {
+            border: none;
+            width: 250px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: #999;
+        }
+
+        .cssmenu ul ul {
+            margin-left: 250px;
+            margin-top: 0px;
+        }
+
+            .cssmenu ul ul a {
+                line-height: 20px;
+            }
+
+            .cssmenu ul ul ul {
+                margin-left: 0px;
+                left: 100%;
+            }
+
+    .cssmenu li {
+        float: left;
+        padding: 0px 5px 0px 5px;
+    }
+
+        .cssmenu li a {
+            color: #fff;
+            display: block;
+            font-size: 11px;
+            padding-top: 10px !important;
+            padding-bottom: 8px !important;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .cssmenu li:hover {
+            background-repeat: no-repeat;
+            padding-left: 0px;
+        }
+
+        .cssmenu li a:hover {
+            color: #fff;
+            text-decoration: none;
+            background-color: #aaa !important;
+        }
+
+        .cssmenu li ul {
+            display: none;
+            height: auto;
+            position: absolute;
+            width: 250px;
+            z-index: 200;
+        }
+
+        .cssmenu li:hover > ul {
+            display: block;
+        }
+
+
+        .cssmenu li ul a {
+            display: block;
+        }
+
+    .cssmenu p {
+        clear: left;
+    }
+
+    .cssmenu .active > a {
+        color: #ffffff;
+    }
+
+        .cssmenu .active > a:hover {
+            color: white;
+        }
+
+    .cssmenu .liste_footer {
+        position: static;
+        float: left;
+        padding: 0;
+        background-color: #e20016;
+        height: 2px;
+        cursor: default;
+    }
+
+    .cssmenu .acilir_ok {
+        background-image: url(images/menu_sag_ok.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        width: 250px;
+        height: 39px;
+    }
+
+#sayfa_detay .link {
+    background-image: url(images/ok_ikon.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    border-bottom: 1px dashed #ccc;
+    color: #003366;
+    width: 740px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+    #sayfa_detay .link:hover {
+        background-color: #f5f5f5;
+    }
+
+#sayfa_detay a {
+    color: #0158A8;
+    font-weight: bold;
+}
+
+
+#kategori_detay {
+}
+
+    #kategori_detay a {
+        background-image: url(images/ok_ikon.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        text-indent: 15px;
+        border-bottom: 1px dotted #ccc;
+        color: #333;
+        font-weight: bold;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: block;
+    }
+
+        #kategori_detay a:hover {
+            background-color: #f5f5f5;
+        }
+
+.div_980 {
+    width: 980px;
+    display: inline-block;
+}
+
+    .div_980 > * {
+        max-width: 980px;
+    }
+
+.div_750 {
+    width: 770px;
+    min-height: 400px;
+    float: right;
+    display: inline-block;
+    padding-left: 15px;
+    position: relative;
+}
+
+    .div_750 img {
+        max-width: 755px;
+    }
+
+
+.div_230 {
+    width: 190px;
+    float: left;
+    display: inline-block;
+}
+
+#slayt_bg {
+    width: %100;
+    height: auto;
+    background-color: #E3E3E3;
+    padding-top: 1px;
+}
+
+#slayt_alti_golge {
+    background-image: url(images/slayt_alti_gri_bg.jpg);
+    background-position: top;
+    background-repeat: repeat-x;
+    padding-top: 5px;
+}
+
+
+/*BASLAR Anasayfa - Duyurular */
+.as_duyurular_header {
+    width: 230px;
+    height: 20px;
+    height: 24px;
+    margin-top: 4px;
+}
+
+.as_duyurular {
+    width: 230px;
+    height: auto;
+    border: 1px dashed #CCCCCC;
+}
+
+    .as_duyurular a {
+        font-family: "Archivo Narrow",sans-serif;
+        font-size: 13px;
+        color: #333333;
+        border-bottom: 1px dashed #CCCCCC;
+        background-image: url(images/ok_ikon.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        display: block;
+        width: 204px;
+        margin-left: 10px;
+        padding-left: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+        .as_duyurular a:hover {
+            color: #e20016;
+            background-color: #f5f5f5;
+        }
+
+.as_duyurular_footer {
+    width: 230px;
+    height: 25px;
+    background-repeat: repeat-y
+}
+
+/*BITER  Anasayfa - Duyurular*/
+
+
+/*BASLAR Haber Detay */
+.hd_duyurular_header {
+    width: 196px;
+    height: 20px;
+    height: 24px;
+    margin-top: 4px;
+}
+
+.hd_duyurular {
+    width: 196px;
+    height: auto;
+    border: 1px dashed #CCCCCC;
+}
+
+    .hd_duyurular a {
+        font-family: "Archivo Narrow",sans-serif;
+        font-size: 13px;
+        color: #333333;
+        border-bottom: 1px dashed #CCCCCC;
+        background-image: url(images/ok_ikon.gif);
+        background-repeat: no-repeat;
+        background-position: left;
+        display: block;
+        width: 172px;
+        margin-left: 10px;
+        padding-left: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+        .hd_duyurular a:hover {
+            color: #243d72;
+            background-color: #f5f5f5;
+        }
+
+.hd_duyurular_footer {
+    width: 196px;
+    height: 53px;
+    background-repeat: repeat-y
+}
+
+/*BITER Haber Detay */
+
+
+
+
+
+.anasayfa_basliklar {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #B3002C;
+    padding-bottom: 4px;
+    display: block
+}
+
+    .anasayfa_basliklar:hover {
+        color: #00aaa9;
+    }
+
+/**/
+.anasayfa_kategoriler_div {
+    float: left;
+    margin-right: 6px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    padding: 1px;
+    width: 238px;
+    height: 118px;
+    overflow: hidden;
+    color: #666666;
+    font-size: 12px;
+}
+
+    .anasayfa_kategoriler_div:hover a {
+        color: #fff;
+        background-color: rgba(221, 0, 8, 0.7);
+        height: 38px;
+    }
+
+.anasayfa_kategori_basligi_div {
+    float: left;
+    width: 182px;
+    padding-bottom: 4px;
+    text-align: center;
+    position: relative;
+}
+
+    .anasayfa_kategori_basligi_div a {
+        font-family: 'Archivo Narrow', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #000;
+        position: absolute;
+        display: table-cell;
+        vertical-align: bottom;
+        bottom: -112px;
+        z-index: 2;
+        background-color: rgba(239, 239, 239, 0.95);
+        width: 217px;
+        padding: 8px;
+        -ms-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+.anasayfa_kategori_resmi_div {
+    float: left;
+    width: 232px;
+    height: 110px;
+    border: solid 1px #ddd;
+    overflow: hidden;
+    position: relative;
+}
+
+.anasayfa_kategori_aciklama_div {
+    float: left;
+    padding: 5px;
+    width: 232px;
+    text-align: center;
+}
+
+.anasayfa_kategori_resmi_div img {
+    width: 232px;
+    height: 110px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+    .anasayfa_kategori_resmi_div img:hover {
+    }
+
+
+
+.icon_1 {
+    background-image: url(images/icons2/1.png);
+    background-repeat: no-repeat;
+    background-position: 2px 6px;
+}
+
+.icon_2 {
+    background-image: url(images/icons2/2.png);
+    background-repeat: no-repeat;
+    background-position: 2px 6px;
+}
+
+.icon_3 {
+    background-image: url(images/icons2/3.png);
+    background-repeat: no-repeat;
+    background-position: 2px 6px;
+}
+
+.icon_4 {
+    background-image: url(images/icons2/4.png);
+    background-repeat: no-repeat;
+    background-position: 2px 6px;
+}
+
+.icon_5 {
+    background-image: url(images/icons2/5.png);
+    background-repeat: no-repeat;
+    background-position: 2px 6px;
+}
+
+.icon_6 {
+    background-image: url(images/icons2/6.png);
+    background-repeat: no-repeat;
+    background-position: 2px 6px;
+}
+
+
+/**/
+
+
+/* BASLAR Iletisim Sayfasi*/
+#googlemaps {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    margin-top:10px;
+    top: 150px;
+    bottom: 650px;
+    left: 0;
+    z-index: 1;
+}
+
+
+#iletisim_formu_div {
+    position: relative;
+    z-index: 1;
+    width: 430px;
+    margin: 10px;
+    margin-left: 0px;
+    padding: 10px;
+    background: white;
+    height: auto;
+    opacity: .90;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.iletisim_textbox1 {
+    border-color: #C0C9D1;
+    background-color: #FFFFFF;
+    border-width: thin;
+    border-style: solid;
+    color: #666666;
+    font-size: 12px;
+    margin-left: 10px;
+    height: 22px;
+    width: 284px
+}
+
+.iletisim_textarea1 {
+    border-color: #C0C9D1;
+    background-color: #FFFFFF;
+    border-width: thin;
+    border-style: solid;
+    color: #666666;
+    font-size: 12px;
+    margin-left: 10px;
+    width: 280px
+}
+
+.iletisim_guvenlik_kodu1 {
+    border-color: #fff;
+    background-color: #fff;
+    border-width: thin;
+    border-style: solid;
+    color: #666666;
+    font-size: 12px;
+    margin-left: 10px;
+    height: 22px;
+}
+
+.iletisim_guvenlik_kodu2 {
+    border-color: #C0C9D1;
+    background-color: #FFFFFF;
+    border-width: thin;
+    border-style: solid;
+    color: #666666;
+    font-size: 12px;
+    height: 22px;
+}
+
+.iletisim_buton {
+    width: 80px;
+    height: 25px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 11px;
+    background-color: #333
+}
+/* BITER Iletisim Sayfasi*/
+
+
+
+.anasayfa_header {
+    background: #084283;
+    cursor: pointer;
+    background-image: url(images/tasarim_web.png);
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+    .anasayfa_header:hover {
+        background: none;
+        background-image: url(images/tasarim.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+.anasayfa_header_off {
+    background: none;
+    background-image: url(images/tasarim.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+    .anasayfa_header_off:hover {
+        background: #084283;
+        background-image: url(images/tasarim_web.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+
+#header_alti_ana_div {
+    width: 100%;
+    height: 19px
+}
+
+#header_alti_orta_div {
+    width: 980px;
+    height: 100%;
+    z-index: 1px;
+    position: relative;
+    background-image: url(images/header_ust_mavi_kose.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: rgba(255,255,255,1.00)
+}
+
+#header_alti_sayfa_basligi {
+    padding-right: 20px;
+    padding-top: 3px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+    #header_alti_sayfa_basligi a {
+        font-family: 'Archivo Narrow', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: #000;
+    }
+
+#header_alti_sol_div {
+    background-image: url(images/header_ust_mavi_bg.png);
+    background-repeat: repeat-x;
+    background-position: center;
+    float: right;
+    width: 35%;
+    height: 100%;
+    margin-top: -19px;
+    z-index: 2px;
+}
+
+
+*:focus {
+    outline: none;
+}
+
+
+/*BASLAR Sayfa Detay Menü*/
+.sd_menu_header {
+    float: left;
+    width: 196px;
+    background-image: url(images/slayt_bg3.png);
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: center
+}
+
+.sd_menu {
+}
+
+    .sd_menu a {
+        width: 181px;
+        background-color: #f0f0f0;
+        overflow: hidden;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: block;
+        border-bottom: 1px dotted #ccc;
+        font-family: 'Archivo Narrow', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #666;
+    }
+
+    .sd_menu .selected {
+        background-image: url(images/kategori_mavi_cizgi_bg.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+
+    .sd_menu a:hover {
+        background-color: #fff;
+        padding-left: 15px;
+        padding-top: 10px;
+        display: block;
+    }
+
+.sd_menu_footer {
+    width: 196px;
+    height: 73px;
+    background-image: url(images/sayfa_menu_footer.png);
+}
+
+/*BITER Sayfa Detay Menü*/
+
+/*BITER Sayfa Detay Menü*/
+
+
+.div_popup_gizlen {
+    display: none;
+    position: absolute;
+    z-index: 999999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.90)
+}
+
+.div_popup_gorun {
+    display: inline-block;
+    position: absolute;
+    z-index: 999999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.70);
+    padding-top: 100px
+}
+
+
+
+.sayfalama_off {
+    background-image: url(images/sayfalama_off.png);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    padding-top: 3px;
+    float: left;
+    margin: 2px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.sayfalama_on {
+    background-image: url(images/sayfalama_on.png);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    padding-top: 3px;
+    float: left;
+    margin: 2px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.galeri_div {
+    position: relative;
+    float: left;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    height: 200px;
+    width: 189px;
+}
+
+.galeri_detay_div {
+    position: relative;
+    float: left;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    height: 135px;
+    width: 189px;
+    background-color: #000
+}
+
+.galeri_baslik {
+    color: #000;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.galeri_resim_div {
+    position: relative;
+    display: block;
+    height: 135px;
+    width: 187px;
+    overflow: hidden;
+    border: 1px solid #f3f3f3;
+}
+
+    .galeri_resim_div img {
+        position: absolute;
+        max-height: 150px;
+        max-width: 210px;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+.galeri_ikon {
+    width: 44px;
+    height: 44px;
+    background-image: url(images/gallery.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 2
+}
+
+
+.galeri_resim_div img:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.geri_butonu {
+    padding: 10px;
+    background-color: #BB0003;
+    color: #fff;
+}
+
+
+/*SAYFALAMA*/
+.sayfalama {
+    width: auto;
+    position: absolute;
+    right: 0;
+    margin-top: 11px;
+}
+
+    .sayfalama ul {
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        overflow: hidden;
+        list-style-type: none;
+    }
+
+        .sayfalama ul li {
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            margin-left: 5px;
+        }
+
+            .sayfalama ul li:first-child {
+                margin-left: 0px;
+            }
+
+            .sayfalama ul li a {
+                color: black;
+                display: block;
+                text-decoration: none;
+                padding: 3px 7px 3px 7px;
+                border: 1px solid #ddd;
+                text-decoration: none; /* no underline */
+                color: #666;
+                font-size: 11px;
+            }
+
+                .sayfalama ul li a:hover, .sayfalama ul a:active {
+                    border: 1px solid #666;
+                    color: #000;
+                }
+
+
+                .sayfalama ul li a.current {
+                    border: 1px solid #666;
+                    font-weight: bold;
+                    background-color: #666;
+                    color: #FFF;
+                }
+
+
+                .sayfalama ul li a img {
+                    border: none;
+                }
+
+/**/
+
+.blog .detay {
+    display: table;
+    color: #fff;
+    font-size: 9px;
+    margin-top: 10px;
+    padding: 6px;
+    background-color: #aaa;
+    border-radius: 2px;
+}
+
+    .blog .detay:hover {
+        background-color: #e20016;
+    }
